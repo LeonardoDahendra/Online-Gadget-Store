@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            /* background-image: url("blueBackground.jpg"); */
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Poppins';
+            color:rgb(219, 226, 239);
+            overflow-y: scroll;
+        }
+    </style>
+    <link rel="stylesheet" href="css/membershipPage.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="asset/header/logoGoLitech.png">
+        <div class="navBarButtonGroup">
+            <a class="navBarButton" href="homePage.html">Home</a>
+            <a class="navBarButton" href="productsPage.html">Products</a>
+            <a class="navBarButton" href="membershipPage.html">Membership</a>
+            <a class="navBarButton" href="ourStoresPage.html">Our Stores</a>
+            <a class="navBarButton" href="aboutUsPage.html">About Us</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="form">
+            <div class="header">
+                <div class="text">Create Membership</div>
+            </div>
+            <div class="body">
+                <form id="formContainer">
+                    <div class="title">
+                        Name
+                        <input type="text" placeholder="Enter Name" id="name">
+                    </div>
+                    <div class="title">
+                        Gender
+                        <div class="selectContainer">
+                            <!-- required in this code is used not for validation but so the color of the first option can be set as grey(placeholder text) -->
+                            <select id="gender" required>
+                                <option value="" disabled selected hidden>Choose Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                            <div class="dropdownButton">
+                                <div class="dropdownArrow">></div>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="title">
+                        E-mail
+                        <input type="text" placeholder="Enter E-mail" id="e-mail">
+                    </div>
+                    <div class="title">
+                        Phone Number
+                        <input type="text" placeholder="08XX-XXXX-XXXX" id="phoneNumber">
+                    </div>
+                    <div class="title">
+                        Address
+                        <input type="text" placeholder="Enter Address" id="address">
+                    </div>
+                    <div class="termsNCondition">
+                        <input type="checkbox" id="checkBox">
+                        <div class="text">I have read and agree with the terms and conditions</div>
+                    </div>
+                    <div class="createMembership">
+                        <button id="createButton">Create</button>
+                    </div>                 
+                </form>         
+            </div>
+        </div>
+        <img class="background" src="asset/blueBackground.jpg"> 
+    </div>
+
+    <div class="footer">
+        <div class="footerHeading">Quick Links
+            <a class="footerLink" href="homePage.html">Home</a>
+            <a class="footerLink" href="productsPage.html">Products</a>
+            <a class="footerLink" href="membershipPage.html">Membership</a>
+            <a class="footerLink" href="ourStoresPage.html">Our Stores</a>
+            <a class="footerLink" href="aboutUsPage.html">About Us</a>
+        </div>
+        <div class="contactUs">Contact Us<br>
+            <a href=""><img class="socialMediaImg" src="asset/footer/facebook.png"></a>
+            <a href=""><img class="socialMediaImg" src="asset/footer/instagram.png"></a>
+            <a href=""><img class="socialMediaImg" src="asset/footer/twitter.png"></a>
+        </div>  
+        
+        <div class="copyright">©GoLitech, 2023. ALL RIGHTS RESERVED</div>
+    </div>
+</body>
+</html>
+
+<script src="membershipPage.js"></script>
